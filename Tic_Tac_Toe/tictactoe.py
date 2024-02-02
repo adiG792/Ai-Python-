@@ -135,7 +135,7 @@ def MaxV(board):
         return utility(board)
     
     for action in actions(board):
-        v = max(v, MinV(result(board, action)))
+        v = max(v, MinV(result(board, action))) # type: ignore
     
     return v
 
@@ -146,7 +146,7 @@ def MinV(board):
         return utility(board)
     
     for action in actions(board):
-        v = min(v, MaxV(result(board, action)))
+        v = min(v, MaxV(result(board, action))) # type: ignore
 
     return v
 
