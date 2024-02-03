@@ -27,7 +27,7 @@ def player(board):
     counto = 0
 
     for row in range(len(board)):
-        for col in range(len(board[row])):
+        for col in range(len(board)):
             if board[row][col] == X:
                 countx += 1
             if board[row][col] == O:
@@ -47,7 +47,7 @@ def actions(board):
     AllPossibleActions = set()
 
     for row in range(len(board)):
-        for col in range(len(board[row])):
+        for col in range(len(board)):
             if board[row][col] == EMPTY:
                 AllPossibleActions.add((row,col))
 
