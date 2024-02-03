@@ -35,7 +35,7 @@ while True:
         # Draw title
         title = largeFont.render("Play Tic-Tac-Toe", True, white)
         titleRect = title.get_rect()
-        titleRect.center = ((width / 2), 50)
+        titleRect.center = ((width / 2), 50) # type: ignore
         screen.blit(title, titleRect)
 
         # Draw buttons
@@ -105,7 +105,7 @@ while True:
             title = f"Computer thinking..."
         title = largeFont.render(title, True, white)
         titleRect = title.get_rect()
-        titleRect.center = ((width / 2), 30)
+        titleRect.center = ((width / 2), 30) # type: ignore
         screen.blit(title, titleRect)
 
         # Check for AI move
