@@ -209,13 +209,13 @@ class Maze():
 
 
 if len(sys.argv) != 2:
-    sys.exit("Usage: python maze.py maze.txt")
+    sys.exit("Usage: python3 maze.py maze1.txt")
 
 m = Maze(sys.argv[1])
 print("Maze:")
 m.print()
 print("Solving...")
-m.solve()``
+m.solve()
 print("States Explored:", m.num_explored)
 print("Solution:")
 m.print()
